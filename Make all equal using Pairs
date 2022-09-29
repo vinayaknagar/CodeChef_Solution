@@ -1,0 +1,27 @@
+# cook your dish here
+def codeChef():
+        n=int(input())
+        
+        res={}
+        list1=list(map(int,input().split(" ")))
+        
+        for i in list1:
+            if i not in res:
+                res[i]=1
+            else:
+                res[i]+=1
+        maxi=0
+        for j in res.values():
+            if j==n:
+                return 0
+                
+            else:
+                if maxi<=j:
+                    maxi=j
+        return n-maxi
+        
+
+for _ in range(int(input())):
+    print(codeChef())
+        
+    
