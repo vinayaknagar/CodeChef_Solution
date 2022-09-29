@@ -1,0 +1,15 @@
+# cook your dish here
+def shotPeople():
+        n,k=map(int,input().split(" "))
+        
+        heights=list(map(int,input().split()))
+        
+        shotout=0
+        for i in range(n):
+            if heights[i]>k:
+                shotout+=1
+        return shotout
+        
+for _ in range(int(input())):
+        print(shotPeople())
+    
