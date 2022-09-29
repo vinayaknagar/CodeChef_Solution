@@ -1,0 +1,32 @@
+# cook your dish here
+def countMatches(count):
+    if count==0 or count==6 or count==9:
+        return 6
+    
+    elif count==1:
+        return 2
+    
+    elif count==2 or count==3 or count==5:
+        return 5
+        
+    elif count==4:
+        return 4
+
+    elif count==7:
+        return 3
+    
+    else:
+        return 7
+
+for _ in range(int(input())):
+    
+    a,b=map(int,input().split())
+    
+    c=str(a+b)
+    
+    count=0
+    
+    for i in range(len(c)):
+        count+=countMatches(int(c[i])) 
+
+    print(count)
