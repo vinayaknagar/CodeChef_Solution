@@ -1,0 +1,21 @@
+# cook your dish here Vinayak Nagar
+w=0
+l=0
+culs=0
+cult=0
+for _ in range(int(input())):
+    
+    s,t=map(int,input().split())
+    
+    culs+=s
+    cult+=t
+    
+    if w<(abs(culs-cult)):
+        w=abs(culs-cult)
+        
+        if culs>cult:
+            l=1
+        else:
+            l=2
+ 
+print(l,w)
