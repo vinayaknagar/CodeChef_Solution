@@ -1,0 +1,15 @@
+for _ in range(int(input())):
+    n=int(input())
+    
+    rep={}
+    for i in range(n):
+        data=int(input())
+        
+        if data not in rep.keys():
+            rep[data]=1
+        else:
+            rep[data]+=1
+    for i in rep:
+        if rep[i]%2!=0:
+            print(i)
+            break
