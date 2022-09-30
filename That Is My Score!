@@ -1,0 +1,12 @@
+# cook your dish here Vinayak NagarThat Is My Score!
+
+for _ in range(int(input())):
+    n = int(input())
+    dict = {}
+    for _ in range(n):
+        i, j = map(int, input().split())
+        if (i not in dict.keys() or dict[i] < j) and i < 9:
+            dict[i] = j
+    print(sum(dict.values()))
+            
+        
