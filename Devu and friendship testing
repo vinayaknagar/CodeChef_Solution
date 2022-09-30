@@ -1,0 +1,7 @@
+# cook your dish here Vinayak Nagar
+for _ in range(int(input())):
+
+    n=int(input())
+    party=list(map(int,input().split()))
+    
+    print(len(set(party)))
