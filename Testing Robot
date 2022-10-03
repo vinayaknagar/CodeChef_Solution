@@ -1,0 +1,16 @@
+# cook your dish here
+for i in range(int(input())):
+    n,x=map(int,input().split())
+    s=input()
+    
+    rep=[x]
+    for i in range(n):
+        if(s[i]=='R'):
+            x=x+1
+            if x not in rep:
+                rep.append(x)
+        elif(s[i]=='L'):
+            x=x-1
+            if x not in rep:
+                rep.append(x)
+    print(len(rep))
