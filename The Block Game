@@ -1,0 +1,39 @@
+# cook your dish here Vinayak Nagar Solution 1
+for _ in range(int(input())):
+    n=input()
+    
+    if(n==n[::-1]):
+        print("wins")
+    else:
+        print("loses")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# cook your dish here Vinayak Nagar Solution 2
+for _ in range(int(input())):
+    n=input()
+    flag=0
+    for i in range(len(n)//2):
+        if n[i]==n[len(n)-i-1]:
+            pass
+        else:
+            flag=1
+            break
+    if(flag==0):
+        print("wins")
+    else:
+        print("loses")
