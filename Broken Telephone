@@ -1,0 +1,12 @@
+# cook your dish here Vinayak Nagar
+for _ in range(int(input())):
+    n=int(input())
+    
+    a=list(map(int,input().split()))
+    
+    list1=[]
+    for i in range(n-1):
+        if a[i]!=a[i+1]:
+            list1.append(i)
+            list1.append(i+1)
+    print(len(set(list1)))
