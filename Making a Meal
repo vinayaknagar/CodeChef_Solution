@@ -1,0 +1,13 @@
+# cook your dish here Vinayak Nagar
+for _ in range(int(input())):
+    n=int(input())
+    dist={'c':0,'o':0,'d':0,'e':0,'h':0,'e':0,'f':0}
+    for i in range(n):
+        string=input()
+        for k in string:
+            if k in dist.keys():
+                dist[k]+=1
+    dist['c'], dist['e'] = dist['c']//2, dist['e']//2
+    
+    print(dist['c'],dist['e'])
+    print(min(dist.values()))
