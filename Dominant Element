@@ -1,0 +1,20 @@
+# cook your dish here Vinayak Nagar
+for _ in range(int(input())):
+    n=int(input())
+    dist={}
+    list1=list(map(int,input().split()))
+    
+    for i in list1:
+        if i in dist:
+            dist[i]+=1
+        else:
+            dist[i]=1
+      
+    list2=[]
+    for keys,values in dist.items():
+        list2.append(values)
+    a=max(list2)
+    if list2.count(a)>1:
+        print("NO")
+    else:
+        print("YES")
